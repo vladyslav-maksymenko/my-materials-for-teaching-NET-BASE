@@ -344,6 +344,14 @@ namespace Module5ConsoleApp
             Console.WriteLine();
 
             Console.WriteLine("=== ДЕМОНСТРАЦІЯ ЗАВЕРШЕНА ===");
+            Console.WriteLine("\nНатисніть будь-яку клавішу для переходу до практичних завдань...");
+            Console.ReadKey();
+            Console.Clear();
+
+            // Демонстрація практичних завдань
+            PracticalTasksDemo.RunAllDemos();
+            
+            Console.WriteLine("=== ВСІ ДЕМОНСТРАЦІЇ ЗАВЕРШЕНІ ===");
             Console.WriteLine("\nНатисніть будь-яку клавішу для виходу...");
             Console.ReadKey();
         }
