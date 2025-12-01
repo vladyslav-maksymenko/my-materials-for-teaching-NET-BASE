@@ -74,7 +74,7 @@ namespace Module6ConsoleApp.Examples
             animal3.MakeSound(); // викликається Bird.MakeSound()
             
             // Спроба викликати специфічний метод - помилка
-            // animal1.Fetch(); // ❌ Помилка компіляції - метод Fetch() не існує в Animal
+            // animal1.Fetch(); //  Помилка компіляції - метод Fetch() не існує в Animal
             
             // Приведення типу через is
             if (animal1 is Dog dog)

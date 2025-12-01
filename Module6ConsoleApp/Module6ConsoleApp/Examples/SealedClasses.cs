@@ -43,14 +43,14 @@ namespace Module6ConsoleApp.Examples
             return Math.Pow(baseValue, exponent);
         }
     }
-    
+
     // Спроба успадкувати sealed клас призведе до помилки компіляції:
-    // public class AdvancedMath : MathHelper { } // ❌ Помилка!
-    
+    // public class AdvancedMath : MathHelper { } //  Помилка!
+
     // ============================================
     // ПРИКЛАД 2: Sealed метод
     // ============================================
-    
+
     public class BaseClassSealed
     {
         public virtual void Method1()
