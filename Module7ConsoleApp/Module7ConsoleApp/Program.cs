@@ -42,56 +42,8 @@ namespace Module7ConsoleApp
     // ПРИКЛАД 2: Інтерфейс з кількома методами
     // ============================================
     
-    interface IShape
-    {
-        double CalculateArea();
-        double CalculatePerimeter();
-        void Draw();
-        string Name { get; }
-    }
-
-    class Circle : IShape
-    {
-        public double Radius { get; set; }
-        public string Name => "Коло";
-
-        public double CalculateArea()
-        {
-            return Math.PI * Radius * Radius;
-        }
-
-        public double CalculatePerimeter()
-        {
-            return 2 * Math.PI * Radius;
-        }
-
-        public void Draw()
-        {
-            Console.WriteLine($"Малюю коло з радіусом {Radius}");
-        }
-    }
-
-    class Rectangle : IShape
-    {
-        public double Width { get; set; }
-        public double Height { get; set; }
-        public string Name => "Прямокутник";
-
-        public double CalculateArea()
-        {
-            return Width * Height;
-        }
-
-        public double CalculatePerimeter()
-        {
-            return 2 * (Width + Height);
-        }
-
-        public void Draw()
-        {
-            Console.WriteLine($"Малюю прямокутник {Width}x{Height}");
-        }
-    }
+    // Примітка: IShape, Circle, Rectangle винесені в PracticalTasks.cs для завдання 4
+    // Тут використовуємо їх для демонстрації
 
     // ============================================
     // ПРИКЛАД 3: Інтерфейсні посилання (поліморфізм)
@@ -404,17 +356,17 @@ namespace Module7ConsoleApp
             // ============================================
             // ПРИКЛАД 2: Інтерфейс з кількома методами
             // ============================================
+            // Примітка: Приклад з IShape перенесено в практичні завдання (завдання 4)
+            // Тут використовуємо класи з PracticalTasks.cs
             Console.WriteLine("--- ПРИКЛАД 2: Інтерфейс з кількома методами ---");
-            IShape circle = new Circle { Radius = 5.0 };
-            IShape rectangle = new Rectangle { Width = 4.0, Height = 6.0 };
+            IShape circle = new Circle(5.0);
+            IShape rectangle = new Rectangle(4.0, 6.0);
 
-            Console.WriteLine($"{circle.Name}:");
-            circle.Draw();
+            Console.WriteLine($"{circle}:");
             Console.WriteLine($"Площа: {circle.CalculateArea():F2}");
             Console.WriteLine($"Периметр: {circle.CalculatePerimeter():F2}");
 
-            Console.WriteLine($"\n{rectangle.Name}:");
-            rectangle.Draw();
+            Console.WriteLine($"\n{rectangle}:");
             Console.WriteLine($"Площа: {rectangle.CalculateArea():F2}");
             Console.WriteLine($"Периметр: {rectangle.CalculatePerimeter():F2}");
             Console.WriteLine();
@@ -595,6 +547,12 @@ namespace Module7ConsoleApp
             }
 
             Console.WriteLine("\n=== КІНЕЦЬ ДЕМОНСТРАЦІЇ ===");
+            
+            // Запуск практичних завдань
+            Console.WriteLine("\n\nНатисніть будь-яку клавішу для переходу до практичних завдань...");
+            Console.ReadKey();
+            Console.Clear();
+            TasksTesting.RunAllTests();
         }
 
         // Допоміжний метод для демонстрації поліморфізму
