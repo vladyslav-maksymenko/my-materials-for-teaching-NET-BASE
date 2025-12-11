@@ -25,7 +25,7 @@ public static class DelegatesExamples
         
         // Виклик методу через делегат
         del("Привіт з делегата!");
-        
+
         // Альтернативний синтаксис
         del.Invoke("Виклик через Invoke");
     }

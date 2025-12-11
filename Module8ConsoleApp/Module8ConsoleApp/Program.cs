@@ -42,6 +42,55 @@ RecordsExamples.PositionalRecordExample();
 RecordsExamples.RecordStructExample();
 RecordsExamples.RecordInheritanceExample();
 
+// ========== ПРАКТИЧНІ ЗАВДАННЯ ==========
+Console.WriteLine("\n\n" + new string('═', 60));
+Console.WriteLine("ЧАСТИНА ПЕРША: ПРАКТИЧНІ ЗАВДАННЯ");
+Console.WriteLine(new string('═', 60));
+
+// Завдання 1: Відображення текстового повідомлення через делегат
+PracticalTasks.Task1_MessageDisplay();
+
+// Завдання 2: Арифметичні операції через делегати
+PracticalTasks.Task2_ArithmeticOperations();
+
+// Завдання 3: Перевірка чисел через Predicate
+PracticalTasks.Task3_NumberPredicates();
+
+// Завдання 4: Арифметичні операції з використанням Invoke
+PracticalTasks.Task4_ArithmeticWithInvoke();
+
+// Завдання 5: Фільтрація елементів List через делегати
+PracticalTasks.Task5_FilterList();
+
+// Завдання 6: Система логування на подіях для колекції
+PracticalTasks.Task6_EventBasedLogging();
+
+// ========== ПРАКТИЧНІ ЗАВДАННЯ ЧАСТИНА 2 ==========
+Console.WriteLine("\n\n" + new string('═', 60));
+Console.WriteLine("ЧАСТИНА ДРУГА: ПРАКТИЧНІ ЗАВДАННЯ (АНОНІМНІ МЕТОДИ ТА ЛЯМБДА-ВИРАЗИ)");
+Console.WriteLine(new string('═', 60));
+
+// Завдання 1: Анонімний метод для перевірки числа на парність і непарність
+PracticalTasks.Task7_AnonymousCheckEvenOdd();
+
+// Завдання 2: Анонімний метод для піднесення числа до степеня
+PracticalTasks.Task8_AnonymousPower();
+
+// Завдання 3: Лямбда-вираз для піднесення числа до будь-якого ступеня
+PracticalTasks.Task9_LambdaPower();
+
+// Завдання 4: Лямбда-вираз для перевірки, чи є день вихідним
+PracticalTasks.Task10_LambdaIsWeekend();
+
+// Завдання 5: Лямбда-вираз для пошуку максимального значення в масиві та його індексу
+PracticalTasks.Task11_LambdaFindMax();
+
+// Завдання 6: Лямбда-вираз для пошуку мінімального значення в масиві та його індексу
+PracticalTasks.Task12_LambdaFindMin();
+
+// Завдання 7: Лямбда-вираз для фільтрації непарних чисел у масиві
+PracticalTasks.Task13_LambdaFilterOdd();
+
 Console.WriteLine("\n\n" + new string('═', 60));
 Console.WriteLine("Демонстрація завершена!");
 Console.WriteLine(new string('═', 60));
