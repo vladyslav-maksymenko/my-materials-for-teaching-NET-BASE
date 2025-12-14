@@ -17,7 +17,7 @@ public static class RecordsExamples
         // Створення екземпляра record
         Person person1 = new("Іван", "Петренко", 25);
         Person person2 = new("Іван", "Петренко", 25);
-        
+
         Console.WriteLine($"Person1: {person1}");
         Console.WriteLine($"Person2: {person2}");
         
@@ -142,8 +142,7 @@ public record struct Color(byte Red, byte Green, byte Blue)
 }
 
 // Наслідування в records
-public record Employee(string FirstName, string LastName, int Age, string Position, decimal Salary)
-    : Person(FirstName, LastName, Age)
+public record Employee(string FirstName, string LastName, int Age, string Position, decimal Salary) : Person(FirstName, LastName, Age)
 {
     public string GetFullInfo() => 
         $"{FirstName} {LastName}, {Age} років, посада: {Position}, зарплата: {Salary} грн";
