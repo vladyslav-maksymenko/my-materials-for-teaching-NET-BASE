@@ -2,18 +2,16 @@
 
 ## Зміст
 
-1. [Модель потоків у C#. Простір System.IO](#модель-потоків-у-c-простір-systemio)
-2. [Клас Stream](#клас-stream)
+1. [Модель потоків у C#](#модель-потоків-у-c)
+2. [Що таке потік? Клас Stream](#що-таке-потік-клас-stream)
 3. [Аналіз байтових класів потоків](#аналіз-байтових-класів-потоків)
 4. [Аналіз символьних класів потоків](#аналіз-символьних-класів-потоків)
 5. [Аналіз двійкових класів потоків](#аналіз-двійкових-класів-потоків)
-6. [FileStream](#filestream)
-7. [StreamWriter](#streamwriter)
-8. [StreamReader](#streamreader)
-9. [BinaryWriter](#binarywriter)
-10. [BinaryReader](#binaryreader)
-11. [Directory, DirectoryInfo, FileInfo](#directory-directoryinfo-fileinfo)
-12. [Регулярні вирази](#регулярні-вирази)
+6. [FileStream](#filestream-детально)
+7. [Directory, DirectoryInfo, FileInfo](#directory-directoryinfo-fileinfo)
+8. [Регулярні вирази](#регулярні-вирази)
+9. [Практичні рекомендації](#практичні-рекомендації)
+10. [Висновки](#висновки)
 
 ---
 # Tема даного репозитарію "Взаємодія з файловою системою
@@ -415,7 +413,7 @@ async Task WriteFileAsync(string fileName, byte[] data)
 ```
 ---
 
-## Directory, DirectoryInfo, FileInfo
+## 7. Directory, DirectoryInfo, FileInfo
 
 ### Статичні класи File та Directory
 
@@ -523,7 +521,7 @@ foreach (DirectoryInfo dir in dirs)
 
 ---
 
-## Регулярні вирази
+## 8. Регулярні вирази
 
 ### Простір System.Text.RegularExpressions
 
@@ -711,7 +709,7 @@ string nameWithoutExtension = Path.GetFileNameWithoutExtension(fileName);
 
 ---
 
-## Висновок
+## Висновки
 
 Модуль 11 охоплює важливі аспекти роботи з файловою системою в C#:
 
