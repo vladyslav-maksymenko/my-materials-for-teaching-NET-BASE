@@ -1,0 +1,57 @@
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio cache/options directory
+.vs/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results
+*.dll
+*.exe
+*.pdb
+*.cache
+
+## Serialized files (examples)
+*.dat
+*.soap
+*.xml
+*.json
+employee_*.dat
+employee_*.soap
+employee_*.xml
+employee_*.json
+department_*.dat
+department_*.json
+custom_object.*
+logs/
+
+## NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+
+## Rider
+.idea/
+
+## VS Code
+.vscode/
+
